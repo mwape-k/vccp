@@ -1,30 +1,74 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from "./components/NavBar.vue";
+import HeroSection from "./components/HeroSection.vue";
+import Background from "./components/Background.vue";
+import WhyMe from "./components/WhyMe.vue";
+import CurrentLikes from "./components/CurrentLikes.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="layout">
+    <header class="head">
+      <HeroSection />
+    </header>
+    <main class="main-sec">
+      <div id="background" class="background-main-cont">
+        <Background />
+      </div>
+      <div id="why" class="why-main-container">
+        <WhyMe />
+      </div>
+      <div id="currents" class="current-main-container">
+        <CurrentLikes />
+      </div>
+    </main>
+    <footer>
+      <Footer />
+    </footer>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+body {
+  background-image: url("@/assets/texture-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0 auto;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+footer {
+  bottom: 0;
+  width: 100%;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+header .head {
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  flex: 1;
+}
+
+.main-sec {
+  flex: 1;
+}
+
+.background-main-cont {
+  margin-bottom: 10%;
+  flex: 1;
+}
+
+.why-main-container {
+  margin-bottom: 10%;
+  flex: 1;
+}
+
+.current-main-container {
+  margin-bottom: 10%;
+  flex: 1;
 }
 </style>
