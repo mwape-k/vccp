@@ -10,8 +10,8 @@ This is my submission for the VCCP Ad School application. It's a single-page per
 
 ## 🛠 Tech Stack
 - HTML5  
-- CSS3 / Tailwind (if used)  
-- JavaScript (optional)
+- CSS3 
+- JavaScript 
 
 ## 🧠 About Me
 I’m a South African creative and full-stack dev student with a passion for design, storytelling, and bold ideas. This site reflects my journey, values, and what I hope to bring to the advertising world.
