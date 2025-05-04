@@ -13,13 +13,31 @@ import Footer from "./components/Footer.vue";
       <HeroSection />
     </header>
     <main class="main-sec">
-      <div id="background" class="background-main-cont">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        id="background"
+        class="background-main-cont"
+      >
         <Background />
       </div>
-      <div id="why" class="why-main-container">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        id="why"
+        class="why-main-container"
+      >
         <WhyMe />
       </div>
-      <div id="currents" class="current-main-container">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        id="currents"
+        class="current-main-container"
+      >
         <CurrentLikes />
       </div>
     </main>
@@ -58,17 +76,17 @@ header .head {
 }
 
 .background-main-cont {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   flex: 1;
 }
 
 .why-main-container {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   flex: 1;
 }
 
 .current-main-container {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   flex: 1;
 }
 </style>
